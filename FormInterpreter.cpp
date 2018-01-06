@@ -141,7 +141,7 @@ void formInterpreter::initOperators()
   operators.insert(std::pair<char, c_operator>('^', c_operator('^', 2)));
 }
 //-------------------------------------------------------------------------------------
-// Check if parentheses are balanced and if a closing parenthesis does not have
+// Check if parentheses are balanced and if a closing parenthesis does have
 // a preceding opening parenthesis.
 //
 bool formInterpreter::checkBalanceOfParenteses(std::string form)
