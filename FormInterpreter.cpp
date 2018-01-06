@@ -1,5 +1,5 @@
 /*
-Expression is a C++ class to evaluate a mathematical formula containing multiple variables and functions.
+formInterpreter is a C++ class to evaluate a mathematical formula containing multiple variables and functions.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -118,7 +118,7 @@ void formInterpreter::addFunction(std::string fname,
   else functions.push_back(new c_function(fname , ffunction, preFactor, postFactor, preAdd));
 }
 //-------------------------------------------------------------------------------------
-// add a function with three arguments
+// add a function with multiple arguments
 //
 void formInterpreter::addFunction(std::string fname,
                                   double (*ffunction)(std::vector<double>),
